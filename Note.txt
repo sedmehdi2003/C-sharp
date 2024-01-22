@@ -13,10 +13,11 @@ double: 8 bytes
 decimal: 16 bytes
 
 Points:
-*we can have Console.WriteLine("{0} {1} {2} {3}", name , family , age , flag)  - output : name family age flag
-
-
-
+* we can have Console.WriteLine("{0} {1} {2} {3}", name , family , age , flag)  - output : name family age flag
+* Operations :
++ - * / %           += -= *= %=        < > <= >= !=       && || !
+* diffrence between "if" and "else if" is when you declare an "if else" 
+your saying if our current "if" worked dont check other expressions.
 
 
 
@@ -26,3 +27,7 @@ methods:
 Console.Write("") - writing without end line
 Console.WriteLine("") - writing with endline
 Console.readkey() - press any key to end program 
+{variable type}.Parse("only strings required") - int.Parse(Console.readLine())
+{variable type}.TryParse(string , out {variable}) - bool flag = int.TryParse(Console.ReadLine(), out number)
+Convert.{}() - Convert.ToInt32(22.55)
+
