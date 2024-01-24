@@ -18,16 +18,27 @@ Points:
 + - * / %           += -= *= %=        < > <= >= !=       && || !
 * diffrence between "if" and "else if" is when you declare an "if else" 
 your saying if our current "if" worked dont check other expressions.
+*while (!int.TryParse(Console.ReadLine(), out number))
+{
+	Console.Write("Enter your number: ")
+}
 
 
 
 
 
-methods: 
+
+
+methods & key words: 
 Console.Write("") - writing without end line
 Console.WriteLine("") - writing with endline
 Console.readkey() - press any key to end program 
 {variable type}.Parse("only strings required") - int.Parse(Console.readLine())
 {variable type}.TryParse(string , out {variable}) - bool flag = int.TryParse(Console.ReadLine(), out number)
 Convert.{}() - Convert.ToInt32(22.55)
-
+continue; - skip current number of loop 
+Environment.NewLine - string name = "Amir" + Environment.NewLine + "Mahdi";
+Thread.Sleep(); - Thread.Sleep(200); makes 200 m/s pause for every output.
+Random {variable} - give us a random number, Random rand = new Random();
+{variable}.Next() - random number range, rand.new (1 , 10) (1 , 10 actually means 1 , 9 because its x < 10.
+using static System.Console; - no more need to type Console in whole project.
