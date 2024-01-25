@@ -97,7 +97,7 @@ methods & key words:
 
 * Console.WriteLine("") - writing with end line
 
-*Console.ReadKey() - press any key to end program 
+* Console.ReadKey() - press any key to end program 
 
 * {variable type}.Parse("only strings required") - ```int.Parse(Console.readLine())```
 
