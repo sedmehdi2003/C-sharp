@@ -23,14 +23,14 @@ decimal: 16 bytes
 * difference between "if" and "else if" is when you declare an "if else" 
 your saying if our current "if" worked dont check other expressions.
 ```
-* while (!int.TryParse(Console.ReadLine(), out number))
+while (!int.TryParse(Console.ReadLine(), out number))
 {
 	Console.Write("Enter your number: ")
 }
 ```
 * in "do/while" statement we need semicolon.
 ```
-* switch (number)
+switch (number)
 {
     case 1:
     case 20:
@@ -50,7 +50,7 @@ case value should be static value and can't be a variable.
 ```int[] num = new int[7]``` or ```int[] num = {1 , 2, ... , 7} ``` or ```int[] num = new int[] {1, 2, ... , 7}```
 
 ```
-* foreach (int i in {array})
+foreach (int i in {array})
 {
     Write(i);
 }
