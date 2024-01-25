@@ -82,53 +82,53 @@ now A is index number of first letter (i) , it means A = 6;
   <br />
 <b>methods & key words: </b>
 
-* Console.Write("") - writing without end line
+* ```Console.Write("")``` - writing without end line
   <br />
   <br />
-* Console.WriteLine("") - writing with end line
+* ```Console.WriteLine("")``` - writing with end line
   <br />
   <br />
-* Console.ReadKey() - press any key to end program
+* ```Console.ReadKey()``` - press any key to end program
   <br />
   <br />
-* {variable type}.Parse("only strings required") - ```int.Parse(Console.readLine())```
+* ```{variable type}.Parse("only strings required")```- ```int.Parse(Console.readLine())```
   <br />
   <br />
-* {variable type}.TryParse(string , out {variable}) - ``` bool flag = int.TryParse(Console.ReadLine(), out number) ```
+* ```{variable type}.TryParse(string , out {variable})``` - ``` bool flag = int.TryParse(Console.ReadLine(), out number) ```
   <br />
   <br />
-* Convert.{}() - Convert.ToInt32(22.55)
+* ```Convert.{}()``` - ```Convert.ToInt32(22.55)```
   <br />
   <br />
-* continue; - skip current number of loop
+* ```continue;``` - skip current number of loop
   <br />
   <br />
-* Environment.NewLine or \n - ```string name = "Amir" + Environment.NewLine + "Mahdi";```
+* ```Environment.NewLine``` or ```"\n"``` - ```string name = "Amir" + Environment.NewLine + "Mahdi";```
   <br />
   <br />
-* Thread.Sleep(); - ```Thread.Sleep(200);``` makes 200 m/s pause for every output.
+* ```Thread.Sleep();``` - ```Thread.Sleep(200);``` makes 200 m/s pause for every output.
   <br />
   <br />
-* Random {variable} - give us a random number, ```Random rand = new Random();```
+* ```Random {variable}``` - give us a random number, ```Random rand = new Random();```
   <br />
   <br />
-* {variable}.Next() - random number range, ```rand.Next (1 , 10) ```
+* ```{variable}.Next()``` - random number range, ```rand.Next (1 , 10) ```
 (1 , 10 actually means 1 , 9 because its x < 10.
   <br />
   <br />
-* using static System.Console; - no more need to type Console in whole project.
+* ```using static System.Console;``` - no more need to type Console in whole project.
   <br />
   <br />
-* Console.Clear() - clear previous lines
+* ```Console.Clear()``` - clear previous lines
   <br />
   <br />
-* {variable}.Length - it more use for arrays var.Length
+* ```{variable}.Length``` - it more use for arrays var.Length
   <br />
   <br />
-* var - is a variable type that automatically set when you declare data.
+* ```var``` - is a variable type that automatically set when you declare data.
   <br />
   <br />
-* {variable}.ToCharArray() - ```char[] charText = variable.ToCharArray();```
+* ```{variable}.ToCharArray()``` - ```char[] charText = variable.ToCharArray();```
 this will make each letter of our string to charText indexes.
   <br />
   <br />
