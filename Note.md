@@ -1,7 +1,7 @@
 
-<b> Points: </b>
+### Points:
 
-* Notations -> \
+* Notations: \
 Camel case : thisIsExample		(for variable) \
 Pascal case: ThisIsExample		(for class and method) \
 Snake case: this_is_example  /  This_Is_Example (for privates : _example) \
@@ -66,21 +66,17 @@ output: it will write all indexes of our array.
 * for converting a char array to string we can do this:
 string str = new string (charArray);
 
-* {variable}.IndexOf - search index in a string.
-```
-string name = "hello its amir";
-int A = name.IndexOf("its");
-```
-now A is index number of first letter (i) , it means A = 6;
-
-
+* when you connect methods , last method will be our output 
+```int A = name.Substring (3, 8).Replace("m", "*").IndexOf("s");``` <br />
+out put will be a int because our last method was .IndexOf()
 
   <br />
   <br />
   <br />
   <br />
   <br />
-<b>methods & key words: </b>
+
+### methods & key words:
 
 * ```Console.Write("")``` - writing without end line
   <br />
@@ -128,7 +124,34 @@ now A is index number of first letter (i) , it means A = 6;
 * ```var``` - is a variable type that automatically set when you declare data.
   <br />
   <br />
-* ```{variable}.ToCharArray()``` - ```char[] charText = variable.ToCharArray();```
+* ```{variable}.ToCharArray()``` - ```char[] charText = variable.ToCharArray();``` <br />
 this will make each letter of our string to charText indexes.
   <br />
   <br />
+
+#### Strings:
+
+*  ```{variable}.IndexOf``` - search index in a string.
+```
+string name = "hello its amir";
+int A = name.IndexOf("its");
+``` 
+now A is index number of first letter (i) , it means A = 6; <br />
+you can also tell it start from specific index : ```int B = name.IndexOf("its", 10);``` <br />
+and you can also search for first index of final repeated word in string by```{variable}.LastIndexOf()```
+* ```{variable}.Replace(first input , second)``` - this will replace first input with second input in a string <br />
+so ```string A = name.Replace('a' , '*');```
+* ```{variable}.Remove(start index , end index)``` - this will remove from start index to end index <br />
+    we can also save removed letters to a string```string A = name.Remove(6 , 10);``` <br />
+    we can also remove just one index ```string A = name.Remove(10);``` <br />
+    we can remove specific part of our string by using ```string A = name.Remove(name.IndexOf("ali") , 3);```<br />
+* ```{variable}.Contains("ali")``` - it will give us a boolean if found the string that we specified <br />
+*  ```{variable}.StartWith("ali")``` and ```{variable}.EndWith("ali")``` - check if we start or end the string with "ali" or not and output will be boolean. <br />
+* ```{variable}.ToLower()``` - it will convert all upper case characters to lower case <br />
+* ```{variable}.ToUpper()``` - it will convert all lower case characters to upper case <br />
+* ```{variable}.Trim()``` - removes spaces from start and end of string <br />
+we have also ```{variable}.TrimStart()``` and ```{variable}.TrimEnd()``` <br />
+* `{variable}.Substring(3 , 5)` - remove from first index to 3 and type 8 indexes after 3. <br />
+* `{variable}.ToString()` - convert everything to string <br />
+* `{variable}.Split(' ')` - it will break your string with char you specified (' ') to parts and output will be array of a string <br /> and each index include seperated part 
+`string[] A = name.Split (' ');` <br />
