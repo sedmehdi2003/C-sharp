@@ -68,8 +68,39 @@ string str = new string (charArray);
 
 * when you connect methods , last method will be our output 
 ```int A = name.Substring (3, 8).Replace("m", "*").IndexOf("s");``` <br />
-out put will be a int because our last method was .IndexOf()
+out put will be a int because our last method was .IndexOf() <br />
+* this is how we declare 2D arrays: <br />
+`int [ , ] age = new int [3 , 4]` - 3 row and 4 column <br />
+for using matrices we need to use for in another for <br />
+* **jagged arrays:**
+`int [][] number = new int [3][]` for columns you should use this: <br />
+`number [0] = new int[4];` <br />
+`number [1] = new int[5];` <br />
+`number [2] = new int[6];` <br />
+```
+for (int i = 0; i < 3; i++){
+  for (int j = 0; j < number[i].Length; j++)
+  {
 
+  }
+}
+```
+or 
+```
+for (int i = 0; i < 3; i++){
+  foreach (var item in number[i])
+  {
+    
+  }
+}
+```
+these are for selecting each index in jagged arrays.<br />
+
+
+
+  <br />
+  <br />
+  <br />
   <br />
   <br />
   <br />
@@ -155,3 +186,5 @@ we have also ```{variable}.TrimStart()``` and ```{variable}.TrimEnd()``` <br />
 * `{variable}.ToString()` - convert everything to string <br />
 * `{variable}.Split(' ')` - it will break your string with char you specified (' ') to parts and output will be array of a string <br /> and each index include seperated part 
 `string[] A = name.Split (' ');` <br />
+* `bool flag = {variable}.Equals(' ');` - if variable equals to your string it will output a true <br />
+* `string[] A = string.Join ("-", name);` - first removes spaces and then add dash between words <br />
