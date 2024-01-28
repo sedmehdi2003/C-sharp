@@ -95,7 +95,9 @@ for (int i = 0; i < 3; i++){
 }
 ```
 these are for selecting each index in jagged arrays.<br />
-
+* Collections are so slower that arrays so if we know how much memory we need <br />
+we should use arrays otherwise we should use collections.<br />
+in collections data type doesn't matter.
 
 
   <br />
@@ -136,7 +138,7 @@ these are for selecting each index in jagged arrays.<br />
 * ```Thread.Sleep();``` - ```Thread.Sleep(200);``` makes 200 m/s pause for every output.
   <br />
   <br />
-* ```Random {variable}``` - give us a random number, ```Random rand = new Random();```
+* ```Random {}``` - give us a random number, ```Random rand = new Random();```
   <br />
   <br />
 * ```{variable}.Next()``` - random number range, ```rand.Next (1 , 10) ```
@@ -188,3 +190,8 @@ we have also ```{variable}.TrimStart()``` and ```{variable}.TrimEnd()``` <br />
 `string[] A = name.Split (' ');` <br />
 * `bool flag = {variable}.Equals(' ');` - if variable equals to your string it will output a true <br />
 * `string[] A = string.Join ("-", name);` - first removes spaces and then add dash between words <br />
+#### Collections:
+* first we should add library `using System.Collections`. <br />
+* `ArrayList {} = new ArrayList();` making array list `ArrayList {List1} = new ArrayList();`  <br />
+we can add anything (any data types) to our list `List1.Add(800)` or `List1.Add("hello")` or ... <br />
+* for writing array list we use array form `Console.WriteLine(List1[1]);` <br />     
