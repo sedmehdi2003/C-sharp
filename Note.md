@@ -97,7 +97,9 @@ for (int i = 0; i < 3; i++){
 these are for selecting each index in jagged arrays.<br />
 * Collections are so slower that arrays so if we know how much memory we need <br />
 we should use arrays otherwise we should use collections.<br />
-in collections data type doesn't matter.
+in collections data type doesn't matter. <br />
+* in arrays we have 1 memory but with many (specified) parts that they are indexes <br />
+but in ArrayList we have many memories that each one known as a index. <br />
 
 
   <br />
@@ -186,12 +188,30 @@ so ```string A = name.Replace('a' , '*');```
 we have also ```{variable}.TrimStart()``` and ```{variable}.TrimEnd()``` <br />
 * `{variable}.Substring(3 , 5)` - remove from first index to 3 and type 8 indexes after 3. <br />
 * `{variable}.ToString()` - convert everything to string <br />
-* `{variable}.Split(' ')` - it will break your string with char you specified (' ') to parts and output will be array of a string <br /> and each index include seperated part 
-`string[] A = name.Split (' ');` <br />
+* `{variable}.Split(' ')` - it will break your string with char you specified (' ') to parts and <br />
+output will be array of a string <br /> and each index include seperated part`string[] A = name.Split (' ');` <br />
 * `bool flag = {variable}.Equals(' ');` - if variable equals to your string it will output a true <br />
 * `string[] A = string.Join ("-", name);` - first removes spaces and then add dash between words <br />
 #### Collections:
 * first we should add library `using System.Collections`. <br />
 * `ArrayList {} = new ArrayList();` making array list `ArrayList {List1} = new ArrayList();`  <br />
-we can add anything (any data types) to our list `List1.Add(800)` or `List1.Add("hello")` or ... <br />
+we can add anything (any data types) to our list `List1.Add(800)` or `List1.Add("hello")` or <br />
+you can add value by user :`List1.Add(Console.ReadLie());`
 * for writing array list we use array form `Console.WriteLine(List1[1]);` <br />     
+* in collection we don't have length method but we have same method that work like .Length:`List1.Count` <br />
+```
+for (int i = 0; i < List1.Count; i++)
+{
+
+}
+```
+* by using `{}.Remove(value)` we can remove an index of our list. `List1.Remove('a')`  <br />
+in this method you should enter value of index. <br />
+if we had many indexes with same value it will remove value with lower index number. <br />
+* another method is `{}.RemoveAt()` and it removes an index by index number.<br />
+`List1.RemoveAt(4)` it will remove index number 4. <br />
+* `List.Clear();` this will remove all of our list. <br />
+* `List.Sort();` it will sort ascending. doesn't have input. <br />
+* `List.Reverse();` it reverses your list (last index = first index and so on) , doesn't have input. <br />
+* for sorting descending first use `List.Sort();` and then `List.Reverse();` <br>
+* `List.Contains();` search in the list , output is a boolean.
