@@ -182,12 +182,34 @@ if we had many indexes with same value it will remove value with lower index num
 * `List.Contains();` search in the list , output is a boolean.<br>
 
 **Sorted list:**
-
 * in SortedList we have a key and value , key is place of our sorted list in memory key can be anything, <br />
   it means we can have our index (key) as a string. <br />
 * when we declare first key other keys should have same data value for example: <br />
   when we have "home1" as our first key next key should made by string too. <br />
-* `SortedList List1 = new SortedList();` making a sorted list
-`SortedList List1 = new SortedList("one","hello")` <br>
-* for writing a sorted list : `Console.Write(List1["one"]);` <br>
-* 
+* sorted list sorts by keys (A-Z when is string) so if we have different value types for keys then it cant sort the list. <br />
+* `SortedList List1 = new SortedList();` making a sorted list. <br/>
+`SortedList List1 = new SortedList("one","hello")`. <br>
+* for writing a sorted list : `Console.Write(List1["one"]);`. <br>
+* you can write value or key by using `List1.Values` or `List1.Keys`. <br />
+* for selecting values or keys from a list :
+```
+foreach (var item in List1.Values){
+
+}
+```
+or 
+```
+foreach (var item in List1.Keys){
+
+}
+```
+* Search for a key: `List1.ContainsKey()` , example: `List1.ContainsKey("one")` output is boolean. <br />
+* search for a value `List1.CocntainsValue()` , example: `List1.CocntainsValue("hello");` output is boolean. <br />
+* for adding new values to a list we use same methods that we were using in array lists. <br />
+* in sorted lists we have actual indexes too but it will set after sort, <br/>
+it means indexes doesnt set per list which defined at upper line. <br />
+* Writing keys with values : <br />
+```
+foreach (var item in List1.keys){
+  Console.WriteLine(item + " " + List1[item])
+}
