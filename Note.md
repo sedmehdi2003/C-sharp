@@ -1,22 +1,21 @@
+## methods , key words & Points:
 
-### Points:
+### Basics:
 
 * Notations: \
-Camel case : thisIsExample		(for variable) \
-Pascal case: ThisIsExample		(for class and method) \
-Snake case: this_is_example  /  This_Is_Example (for privates : _example) \
-Kebab case: this-is-example  /  This-Is-Example
+  Camel case : thisIsExample		(for variable) \
+  Pascal case: ThisIsExample		(for class and method) \
+  Snake case: this_is_example  /  This_Is_Example (for privates : _example) \
+  Kebab case: this-is-example  /  This-Is-Example
 
 
 * Data types memory size:
-bool: 1 byte
-char: 1 byte
-int: 4 bytes
-float: 4 bytes
-double: 8 bytes
-decimal: 16 bytes
-
-* we can have ```Console.WriteLine("{0} {1} {2} {3}", name , family , age , flag)```  - output : name family age flag
+  bool: 1 byte
+  char: 1 byte
+  int: 4 bytes
+  float: 4 bytes
+  double: 8 bytes
+  decimal: 16 bytes
 
 
 * Operations :
@@ -26,8 +25,9 @@ decimal: 16 bytes
 < > <= >= !=       
 && || !
 
-* difference between "if" and "else if" is when you declare an "if else" 
-your saying if our current "if" worked dont check other expressions.
+* we can have ```Console.WriteLine("{0} {1} {2} {3}", name , family , age , flag)```  - output : name family age flag
+* difference between "if" and "else if" is when you declare an "if else"
+  your saying if our current "if" worked dont check other expressions.
 ```
 while (!int.TryParse(Console.ReadLine(), out number))
 {
@@ -53,7 +53,7 @@ switch (number)
 case value should be static value and can't be a variable.
 
 * in C# we declare a array like this :
-```int[] num = new int[7]``` or ```int[] num = {1 , 2, ... , 7} ``` or ```int[] num = new int[] {1, 2, ... , 7}```
+  ```int[] num = new int[7]``` or ```int[] num = {1 , 2, ... , 7} ``` or ```int[] num = new int[] {1, 2, ... , 7}```
 
 ```
 foreach (int i in {array})
@@ -64,107 +64,35 @@ foreach (int i in {array})
 output: it will write all indexes of our array.
 
 * for converting a char array to string we can do this:
-string str = new string (charArray);
+  string str = new string (charArray);
 
-* when you connect methods , last method will be our output 
-```int A = name.Substring (3, 8).Replace("m", "*").IndexOf("s");``` <br />
-out put will be a int because our last method was .IndexOf() <br />
+* when you connect methods , last method will be our output
+  ```int A = name.Substring (3, 8).Replace("m", "*").IndexOf("s");``` <br />
+  out put will be a int because our last method was .IndexOf() <br />
 * this is how we declare 2D arrays: <br />
-`int [ , ] age = new int [3 , 4]` - 3 row and 4 column <br />
-for using matrices we need to use for in another for <br />
-* **jagged arrays:**
-`int [][] number = new int [3][]` for columns you should use this: <br />
-`number [0] = new int[4];` <br />
-`number [1] = new int[5];` <br />
-`number [2] = new int[6];` <br />
-```
-for (int i = 0; i < 3; i++){
-  for (int j = 0; j < number[i].Length; j++)
-  {
-
-  }
-}
-```
-or 
-```
-for (int i = 0; i < 3; i++){
-  foreach (var item in number[i])
-  {
-    
-  }
-}
-```
-these are for selecting each index in jagged arrays.<br />
-* Collections are so slower that arrays so if we know how much memory we need <br />
-we should use arrays otherwise we should use collections.<br />
-in collections data type doesn't matter. <br />
-* in arrays we have 1 memory but with many (specified) parts that they are indexes <br />
-but in ArrayList we have many memories that each one known as a index. <br />
-
-
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-
-### methods & key words:
-
-* ```Console.Write("")``` - writing without end line
-  <br />
-  <br />
-* ```Console.WriteLine("")``` - writing with end line
-  <br />
-  <br />
-* ```Console.ReadKey()``` - press any key to end program
-  <br />
-  <br />
-* ```{variable type}.Parse("only strings required")```- ```int.Parse(Console.readLine())```
-  <br />
-  <br />
-* ```{variable type}.TryParse(string , out {variable})``` - ``` bool flag = int.TryParse(Console.ReadLine(), out number) ```
-  <br />
-  <br />
-* ```Convert.{}()``` - ```Convert.ToInt32(22.55)```
-  <br />
-  <br />
-* ```continue;``` - skip current number of loop
-  <br />
-  <br />
-* ```Environment.NewLine``` or ```"\n"``` - ```string name = "Amir" + Environment.NewLine + "Mahdi";```
-  <br />
-  <br />
-* ```Thread.Sleep();``` - ```Thread.Sleep(200);``` makes 200 m/s pause for every output.
-  <br />
-  <br />
-* ```Random {}``` - give us a random number, ```Random rand = new Random();```
-  <br />
-  <br />
+  `int [ , ] age = new int [3 , 4]` - 3 row and 4 column <br />
+  for using matrices we need to use for in another for <br />
+* ```Console.Write("")``` - writing without end line <br />
+* ```Console.WriteLine("")``` - writing with end line <br />
+* ```Console.ReadKey()``` - press any key to end program <br />
+* ```{variable type}.Parse("only strings required")```- ```int.Parse(Console.readLine())``` <br />
+* ```{variable type}.TryParse(string , out {variable})``` - ``` bool flag = int.TryParse(Console.ReadLine(), out number) ``` <br />
+* ```Convert.{}()``` - ```Convert.ToInt32(22.55)``` <br />
+* ```continue;``` - skip current number of loop <br />
+* ```Environment.NewLine``` or ```"\n"``` - ```string name = "Amir" + Environment.NewLine + "Mahdi";``` <br />
+* ```Thread.Sleep();``` - ```Thread.Sleep(200);``` makes 200 m/s pause for every output. <br />
+* ```Random {}``` - give us a random number, ```Random rand = new Random();``` <br />
 * ```{variable}.Next()``` - random number range, ```rand.Next (1 , 10) ```
-(1 , 10 actually means 1 , 9 because its x < 10.
-  <br />
-  <br />
-* ```using static System.Console;``` - no more need to type Console in whole project.
-  <br />
-  <br />
-* ```Console.Clear()``` - clear previous lines
-  <br />
-  <br />
-* ```{variable}.Length``` - it more use for arrays var.Length
-  <br />
-  <br />
-* ```var``` - is a variable type that automatically set when you declare data.
-  <br />
-  <br />
+(1 , 10 actually means 1 , 9 because its x < 10. <br />
+* ```using static System.Console;``` - no more need to type Console in whole project. <br />
+* ```Console.Clear()``` - clear previous lines <br />
+* ```{variable}.Length``` - it more use for arrays var.Length <br />
+* ```var``` - is a variable type that automatically set when you declare data. <br />
 * ```{variable}.ToCharArray()``` - ```char[] charText = variable.ToCharArray();``` <br />
 this will make each letter of our string to charText indexes.
   <br />
-  <br />
 
-#### Strings:
+### Strings:
 
 *  ```{variable}.IndexOf``` - search index in a string.
 ```
@@ -192,8 +120,45 @@ we have also ```{variable}.TrimStart()``` and ```{variable}.TrimEnd()``` <br />
 output will be array of a string <br /> and each index include seperated part`string[] A = name.Split (' ');` <br />
 * `bool flag = {variable}.Equals(' ');` - if variable equals to your string it will output a true <br />
 * `string[] A = string.Join ("-", name);` - first removes spaces and then add dash between words <br />
-#### Collections:
+
+**jagged arrays:**
+  
+
+* you have to declare rows first you declare array`int [][] number = new int [3][]`  <br />
+* for columns you should use this: <br />
+  `number [0] = new int[4];` <br />
+  `number [1] = new int[5];` <br />
+  `number [2] = new int[6];` <br />
+* for selecting each index in jagged arrays :
+```
+for (int i = 0; i < 3; i++){
+  for (int j = 0; j < number[i].Length; j++)
+  {
+
+  }
+}
+```
+or
+```
+for (int i = 0; i < 3; i++){
+  foreach (var item in number[i])
+  {
+    
+  }
+}
+```
+
+### Collections:
+
+* Collections are so slower that arrays so if we know how much memory we need <br />
+  we should use arrays otherwise we should use collections.<br />
+  in collections data type doesn't matter. <br />
 * first we should add library `using System.Collections`. <br />
+
+**Array list:**
+
+* in arrays we have 1 memory but with many (specified) parts that they are indexes <br />
+  but in ArrayList we have many memories that each one known as a index. <br />
 * `ArrayList {} = new ArrayList();` making array list `ArrayList {List1} = new ArrayList();`  <br />
 we can add anything (any data types) to our list `List1.Add(800)` or `List1.Add("hello")` or <br />
 you can add value by user :`List1.Add(Console.ReadLie());`
@@ -214,4 +179,15 @@ if we had many indexes with same value it will remove value with lower index num
 * `List.Sort();` it will sort ascending. doesn't have input. <br />
 * `List.Reverse();` it reverses your list (last index = first index and so on) , doesn't have input. <br />
 * for sorting descending first use `List.Sort();` and then `List.Reverse();` <br>
-* `List.Contains();` search in the list , output is a boolean.
+* `List.Contains();` search in the list , output is a boolean.<br>
+
+**Sorted list:**
+
+* in SortedList we have a key and value , key is place of our sorted list in memory key can be anything, <br />
+  it means we can have our index (key) as a string. <br />
+* when we declare first key other keys should have same data value for example: <br />
+  when we have "home1" as our first key next key should made by string too. <br />
+* `SortedList List1 = new SortedList();` making a sorted list
+`SortedList List1 = new SortedList("one","hello")` <br>
+* for writing a sorted list : `Console.Write(List1["one"]);` <br>
+* 
