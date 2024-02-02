@@ -78,6 +78,7 @@ output: it will write all indexes of our array.
 * ```{variable type}.Parse("only strings required")```- ```int.Parse(Console.readLine())``` <br />
 * ```{variable type}.TryParse(string , out {variable})``` - ``` bool flag = int.TryParse(Console.ReadLine(), out number) ``` <br />
 * ```Convert.{}()``` - ```Convert.ToInt32(22.55)``` <br />
+* for converting float we should use `.Parse()` because Convert class doesn't have `Convert.ToFloat`. <br />
 * ```continue;``` - skip current number of loop <br />
 * ```Environment.NewLine``` or ```"\n"``` - ```string name = "Amir" + Environment.NewLine + "Mahdi";``` <br />
 * ```Thread.Sleep();``` - ```Thread.Sleep(200);``` makes 200 m/s pause for every output. <br />
@@ -89,6 +90,12 @@ output: it will write all indexes of our array.
 * ```{variable}.Length``` - it more use for arrays var.Length <br />
 * ```var``` - is a variable type that automatically set when you declare data. <br />
 * ```{variable}.ToCharArray()``` - ```char[] charText = variable.ToCharArray();``` <br />
+* `DateTime.Now` - return date and time of now. <br />
+* `System.Globalization;` - this is namespace for Calender. <br />
+* `PersianCalendar {name} = new PersianCalender();` - works on Shamsi calendar. <br/>
+* `GetDayOfMonth(Date.Now);` - calculating of day Shamsi. <br />
+* `GetMonth(Date.Now);` - calculating of month Shamsi. <br />
+* `GetYear(Date.Now);` - calculating of year Shamsi. <br />
 this will make each letter of our string to charText indexes.
   <br />
 
@@ -213,3 +220,75 @@ it means indexes doesnt set per list which defined at upper line. <br />
 foreach (var item in List1.keys){
   Console.WriteLine(item + " " + List1[item])
 }
+```
+
+### Functions
+
+* functions can have 0 to N inputs but their output will be 0 to 1. <br />
+* functions name should be Pascal case. <br />
+* creating a function in C# : <br />
+``` 
+static void Name (){
+  codes
+}
+```
+or 
+``` 
+static void Name (int a){
+codes
+}
+``` 
+or
+```
+static int Sum(int a , int b , int c){
+//for example
+int sum = a + b + c;
+return sum;
+}
+```
+or
+```
+static int Sum(int a , int b , int c){
+//for example
+return a + b + c;
+}
+```
+
+* its better to create many small functions instead of one big function. <br />
+* after creating a function you can hit backslash 3 times (///)to make a XML comment and add info for your function. <br />
+* Method with multi inputs: <br />
+we need to have multi functions with same name but different arguments and code doesn't matter. <br />
+
+### OOP
+
+* methods and classes should written by pascal case. <br />
+* Properties are data members of our class. <br />
+* creating new class: <br />
+```
+class Student 
+{
+    int grade;
+    int age;
+    \\grade and age are properties
+    void avgGrade()
+    {
+    \\this function called method
+    }
+
+}
+```
+* when you create new shape with `new` keyword, you can use methods of class. <br /> 
+so we can create new shape this way: `Random number = new Random();` then we can use methods of class Random. <br />
+* access levels: <br />
+public <br />
+private <br />
+protected <br />
+internal <br />
+protected internal <br />
+* object class inheriting every class, so you can use methods of class object. <br /> 
+* if you don't set access level system will imagine it as private. <br />
+* we can also set property value in main class(if you set access level to public). <br /> 
+* setter methods should be public and they have 1 or more arguments, <br /> 
+so we can set value for private properties by setter methods. <br />
+* getter methods should be public and they return property value, <br />
+so we can have access valur of private properties by getter method. <br />
