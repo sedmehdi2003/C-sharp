@@ -1,6 +1,6 @@
 ## methods , key words & Points:
 
-### Basics:
+### Basics
 
 * Notations: \
   Camel case : thisIsExample		(for variable) \
@@ -9,7 +9,8 @@
   Kebab case: this-is-example  /  This-Is-Example
 
 
-* Data types memory size:
+**Data types memory size:**
+
   bool: 1 byte
   char: 1 byte
   int: 4 bytes
@@ -18,7 +19,7 @@
   decimal: 16 bytes
 
 
-* Operations :
+**Operations :**
 
 / %  - * \
 += -= *= %=        
@@ -99,7 +100,7 @@ output: it will write all indexes of our array.
 this will make each letter of our string to charText indexes.
   <br />
 
-### Strings:
+### Strings
 
 *  ```{variable}.IndexOf``` - search index in a string.
 ```
@@ -155,7 +156,7 @@ for (int i = 0; i < 3; i++){
 }
 ```
 
-### Collections:
+### Collections
 
 * Collections are so slower that arrays so if we know how much memory we need <br />
   we should use arrays otherwise we should use collections.<br />
@@ -262,8 +263,12 @@ we need to have multi functions with same name but different arguments and code 
 ### OOP
 
 * methods and classes should written by pascal case. <br />
+* methods are shared between all shapes. <br /> 
 * Properties are data members of our class. <br />
-* creating new class: <br />
+* object class inheriting every class, so you can use methods of class object. <br />
+
+**creating new class and shape:**
+
 ```
 class Student 
 {
@@ -279,20 +284,77 @@ class Student
 ```
 * when you create new shape with `new` keyword, you can use methods of class. <br /> 
 so we can create new shape this way: `Random number = new Random();` then we can use methods of class Random. <br />
-* access levels: <br />
+
+**access levels:**
+
+* we have 5 types of access levels :
 public <br />
 private <br />
 protected <br />
 internal <br />
 protected internal <br />
-* object class inheriting every class, so you can use methods of class object. <br /> 
 * if you don't set access level system will imagine it as private. <br />
-* we can also set property value in main class(if you set access level to public). <br /> 
+* we can also set property value in main class(if you set access level to public). <br />
 * setting properties access level to public is dangerous because of security issues. <br />
+
+**setter and getter:**
+
 * setter methods should be public and they have 1 or more arguments, <br /> 
 so we can set value for private properties by setter methods. <br />
 * getter methods should be public and they return property value, <br />
 so we can have access value of private properties by getter method. <br />
-* methods are shared between all shapes. <br />
 * in new shapes, if we don't declare value of any int property it will be zero (0) automatically. <br />
-* 
+
+**overloading**
+
+* overloading is creating a method with different inputs, it means we can set its arguments in different situations. <br />
+* how to overload a method? for doing this we should declare a method several times with same name and different <br />
+arguments data types or arguments numbers. <br />
+```
+class person 
+{
+  int personId;
+  int personAge;
+  string personName;
+  
+  public void Setter(int personId, int personAge, string personName)
+  {
+  this.personId = personId;
+  this.personAge = personAge;
+  this.personName = personName;
+  }
+  
+  public void Setter(int personId, int personAge)
+  {
+  this.personId = personId;
+  this.personAge = personAge;
+  }
+  
+  public void Setter(int personId)
+  {
+  this.personId = personId;
+  }
+
+}
+```
+* when we call this method we can set arguments in different situations:
+```
+Setter(128 , 19 , "amir");
+Setter(129 , 20);
+Setter(130);
+```
+as you can see we called same method with different arguments numbers 
+
+**`this` keyword**
+
+* when properties are out of method scope and we have a setter method with all arguments (arguments are same name with property). <br />
+for understanding that which property is out and which is our argument we use `this.{property}` key word. <br/>
+for example: <br/>
+```
+public void Setter (int personId , string personFirstName , string personLastName)
+{
+this.personId = personId;
+this.personFirstName = personFirstName;
+this.personLastName = personLastName;
+}
+```
