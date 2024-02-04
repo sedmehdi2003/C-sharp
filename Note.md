@@ -26,9 +26,13 @@
 < > <= >= !=       
 && || !
 
-* we can have ```Console.WriteLine("{0} {1} {2} {3}", name , family , age , flag)```  - output : name family age flag
+* we can have <br />
+`Console.WriteLine("{0} {1} {2} {3}", name , family , age , flag)` <br />
+or <br />
+`Console.WriteLine($"{name} {family} {age} {flag}")` <br />
+both outputs are same : name family age flag <br />
 * difference between "if" and "else if" is when you declare an "if else"
-  your saying if our current "if" worked dont check other expressions.
+  your saying if our current "if" worked dont check other expressions. <br />
 ```
 while (!int.TryParse(Console.ReadLine(), out number))
 {
