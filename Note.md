@@ -264,8 +264,10 @@ we need to have multi functions with same name but different arguments and code 
 
 * methods and classes should written by pascal case. <br />
 * methods are shared between all shapes. <br /> 
-* Properties are data members of our class. <br />
+* Fields are data members of our class. <br />
 * object class inheriting every class, so you can use methods of class object. <br />
+* you can add class as a .cs file to avoid long code lines <br />
+and to use that class, namespace names should be same or you can use key word `using` plus namespace name. <br />
 
 **creating new class and shape:**
 
@@ -294,16 +296,16 @@ protected <br />
 internal <br />
 protected internal <br />
 * if you don't set access level system will imagine it as private. <br />
-* we can also set property value in main class(if you set access level to public). <br />
+* we can also set field value in main class(if you set access level to public). <br />
 * setting properties access level to public is dangerous because of security issues. <br />
 
-**setter and getter:**
+**setter and getter me:**
 
 * setter methods should be public and they have 1 or more arguments, <br /> 
 so we can set value for private properties by setter methods. <br />
 * getter methods should be public and they return property value, <br />
 so we can have access value of private properties by getter method. <br />
-* in new shapes, if we don't declare value of any int property it will be zero (0) automatically. <br />
+* in new shapes, if we don't declare value of any int field it will be zero (0) automatically. <br />
 
 **overloading**
 
@@ -358,3 +360,26 @@ this.personFirstName = personFirstName;
 this.personLastName = personLastName;
 }
 ```
+
+**Properties:**
+
+* properties always use pascal case. <br />
+* a field that can do set and get called property: <br />
+```
+public int PersonId 
+{ 
+  get
+  {
+    return {something};
+  }
+  set
+  {
+    personId = value;
+  }
+  
+}
+```
+* `value` is a key word that mean property's value type can place instead `value`. <br />
+* for calling properties : <br />
+if we want to set we should put property left side of `=` like: `person1.PersonId = 10;`. <br /> 
+if we want to get we should put property right side of `=` like: `int x = person1.PersonId;`. <br />
