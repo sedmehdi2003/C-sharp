@@ -387,3 +387,22 @@ public int PersonId
 * for calling properties : <br />
 if we want to set we should put property left side of `=` like: `person1.PersonId = 10;`. <br /> 
 if we want to get we should put property right side of `=` like: `int x = person1.PersonId;`. <br />
+
+**constructor method**
+
+* system defines a constructor method by default when we create a class. <
+* when we rewrite the constructor method, default constructor method will 
+* constructor method has same name as our class name. <br />
+* how to make a constructor method: <br />
+```
+class Person
+{
+    public Person (int personId , string personFirstName , string personLastName)
+    {
+        this.personId = personId;
+        this.personFirstName = personFirstName;
+        this.personLastName = personLastName;
+    }
+}
+```
+* we can just use the constructor method to create a shape for one time and can't use shape after calling constructor. <br />
