@@ -310,6 +310,20 @@ so we can set value for private properties by setter methods. <br />
 * getter methods should be public and they return property value, <br />
 so we can have access value of private properties by getter method. <br />
 * in new shapes, if we don't declare value of any int field it will be zero (0) automatically. <br />
+* we can also set value to arguments, so when calling setter method, <br />
+user can don't set values that we set in argument and it will be fill with argument value: <br />
+```
+public void Setter (int a, int b = 0,int c = 10) 
+{
+  codes...
+}
+```
+* calling is like this: <br />
+```
+MyClass c1 = new MyClass();
+c1.Setter(20);
+```
+* we should set value from right argument to left one. <br />
 
 **overloading**
 
@@ -383,6 +397,11 @@ public int PersonId
   
 }
 ```
+or we can simply use: <br />
+```
+public int PersonId { get; set; }
+// this property will declare a field by name of the property.
+```
 * `value` is a key word that mean property's value type can place instead `value`. <br />
 * for calling properties : <br />
 if we want to set we should put property left side of `=` like: `person1.PersonId = 10;`. <br /> 
@@ -390,8 +409,9 @@ if we want to get we should put property right side of `=` like: `int x = person
 
 **constructor method**
 
-* system defines a constructor method by default when we create a class. <
-* when we rewrite the constructor method, default constructor method will 
+* constructor method makes our shape by `new` keyword. <br/>
+* system defines a constructor method by default when we create a class. <br/>
+* when we rewrite the constructor method, default constructor method will be destroyed. <br/>
 * constructor method has same name as our class name. <br />
 * how to make a constructor method: <br />
 ```
@@ -406,3 +426,4 @@ class Person
 }
 ```
 * we can just use the constructor method to create a shape for one time and can't use shape after calling constructor. <br />
+* 
