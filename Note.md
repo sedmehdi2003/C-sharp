@@ -426,4 +426,11 @@ class Person
 }
 ```
 * we can just use the constructor method to create a shape for one time and can't use shape after calling constructor. <br />
+  
+**Static**
+
+* methods which we can access them by their class name, called static methods. <br />
+* if a class member be static it wont be member of shape of class, it will be member of our class. <br />
+* if a method is static, it only able to access static fields. <br />
+* static members belong to all members of the class so value would be shared. <br />
 * 
