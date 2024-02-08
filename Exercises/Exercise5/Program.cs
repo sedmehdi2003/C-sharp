@@ -3,6 +3,7 @@ using System.Collections;
 using static System.Console;
 using System.Threading;
 using System.Globalization;
+
 namespace Exercise5
 {
     public class Program
