@@ -243,6 +243,15 @@ Student student = new Student();
 List<Student> studentList = new List<Student>();
 studentList.Add(student);
 ```
+* foreach loop of list:
+```
+foreach (var item in List)
+{
+item.print(); // prints members of list
+}
+```
+and for adding course to student class: <br/>
+
 
 ### Functions
 
