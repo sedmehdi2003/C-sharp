@@ -1,0 +1,15 @@
+E:\Codes\C-sharp\Exercises\Exercise8\bin\Debug\net8.0\Exercise8.exe
+E:\Codes\C-sharp\Exercises\Exercise8\bin\Debug\net8.0\Exercise8.deps.json
+E:\Codes\C-sharp\Exercises\Exercise8\bin\Debug\net8.0\Exercise8.runtimeconfig.json
+E:\Codes\C-sharp\Exercises\Exercise8\bin\Debug\net8.0\Exercise8.dll
+E:\Codes\C-sharp\Exercises\Exercise8\bin\Debug\net8.0\Exercise8.pdb
+E:\Codes\C-sharp\Exercises\Exercise8\obj\Debug\net8.0\Exercise8.GeneratedMSBuildEditorConfig.editorconfig
+E:\Codes\C-sharp\Exercises\Exercise8\obj\Debug\net8.0\Exercise8.AssemblyInfoInputs.cache
+E:\Codes\C-sharp\Exercises\Exercise8\obj\Debug\net8.0\Exercise8.AssemblyInfo.cs
+E:\Codes\C-sharp\Exercises\Exercise8\obj\Debug\net8.0\Exercise8.csproj.CoreCompileInputs.cache
+E:\Codes\C-sharp\Exercises\Exercise8\obj\Debug\net8.0\Exercise8.sourcelink.json
+E:\Codes\C-sharp\Exercises\Exercise8\obj\Debug\net8.0\Exercise8.dll
+E:\Codes\C-sharp\Exercises\Exercise8\obj\Debug\net8.0\refint\Exercise8.dll
+E:\Codes\C-sharp\Exercises\Exercise8\obj\Debug\net8.0\Exercise8.pdb
+E:\Codes\C-sharp\Exercises\Exercise8\obj\Debug\net8.0\Exercise8.genruntimeconfig.cache
+E:\Codes\C-sharp\Exercises\Exercise8\obj\Debug\net8.0\ref\Exercise8.dll
