@@ -227,6 +227,23 @@ foreach (var item in List1.keys){
 }
 ```
 
+### Generic Collections
+
+* for add generics `using System.Collections.Generic`. <br />
+
+
+**List:**
+
+* for defining a list : `List<data type> {name} = new List<data type>();` for example: `List<int> list1 = new List<int>();`. <br />
+* we can use methods and tools of ArrayList for List too. <br />
+* we can add a class to the list:
+```
+Student student = new Student();
+// Student is a class name
+List<Student> studentList = new List<Student>();
+studentList.Add(student);
+```
+
 ### Functions
 
 * functions can have 0 to N inputs but their output will be 0 to 1. <br />
@@ -290,6 +307,40 @@ class Student
 ```
 * when you create new shape with `new` keyword, you can use methods of class. <br /> 
 so we can create new shape this way: `Random number = new Random();` then we can use methods of class Random. <br />
+* we can create new shapes with for loop to avoid repeated codes: <br />
+```
+List<Student> studentList = new List<Student>();
+
+for (int i = 0; i < 3; i++)
+{
+Student student = new Student();
+// Student is a class name
+Console.writeLine("Enter id: ");
+student.StudentId = Convert.ToInt32(Console.ReadLine());
+Console.writeLine("Enter first name: ");
+student.StudentFName = Console.ReadLine();
+Console.writeLine("Enter lastname: ");
+student.StudentLName = Console.ReadLine();
+Console.writeLine("Enter age: ");
+student.StudenAge = Convert.ToInt32(Console.ReadLine());
+
+studentList.Add(student);
+}
+```
+and then for writing we use: <br />
+```
+for (int i = 0; i < studentList.Count;i++)
+{
+Console.writeLine("studentList[i].StudentId + studentList[i].StudentFName + studentList[i].StudentLName + studentList[i].StudentFName + studentList[i].StudentAge");
+}
+```
+and foreach loop:
+```
+foreach (var item in studentList)
+{
+Console.writeLine("item.StudentId + item.StudentFName + item.StudentLName + item.StudentFName + item.StudentAge");
+}
+```
 
 **access levels:**
 
@@ -433,4 +484,3 @@ class Person
 * if a class member be static it wont be member of shape of class, it will be member of our class. <br />
 * if a method is static, it only able to access static fields. <br />
 * static members belong to all members of the class so value would be shared. <br />
-* 
