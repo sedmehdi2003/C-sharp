@@ -14,10 +14,11 @@ public class Student
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public int Age { get; set; }
+    private static int _studentNumber;
     
     public List<Lessons> LessonsList = new List<Lessons>();
     
-    private static int _studentNumber; 
+     
     public Student(){}
     
     public Student(int StudentId, string FirstName, string LastName, int Age)
@@ -26,12 +27,6 @@ public class Student
         this.FirstName = FirstName;
         this.LastName = LastName;
         this.Age = Age;
-    }
-
-    public void PrintStudentInfo()
-    {
-        WriteLine("_______________________________________________________________________________________________");
-        WriteLine("id:{0} \t first name:{1} \t last name:{2} \t age:{3}" , StudentId , FirstName , LastName , Age);
     }
     
     public static int StudentNumber ()
@@ -42,12 +37,18 @@ public class Student
 
         while (flag == false)
         {
-                WriteLine("Unknown answer! try again...");
-                flag = int.TryParse(ReadLine(), out _studentNumber);
-                Clear();
+            WriteLine("Unknown answer! try again...");
+            flag = int.TryParse(ReadLine(), out _studentNumber);
+            Clear();
         }
         Clear();
         return _studentNumber;
+    }
+    
+    public void PrintStudentInfo()
+    {
+        WriteLine("_______________________________________________________________________________________________");
+        WriteLine("id:{0} \t first name:{1} \t last name:{2} \t age:{3}" , StudentId , FirstName , LastName , Age);
     }
 
     public void AddLesson(Lessons lesson)

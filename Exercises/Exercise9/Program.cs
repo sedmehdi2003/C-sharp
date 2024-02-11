@@ -52,7 +52,7 @@ namespace Exercise9
                 }
                 StudentList.Add(student);
             }
-
+            
             foreach (var item in StudentList)
             {
                 item.PrintStudentInfo();
