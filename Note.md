@@ -493,3 +493,9 @@ class Person
 * if a class member be static it wont be member of shape of class, it will be member of our class. <br />
 * if a method is static, it only able to access static fields. <br />
 * static members belong to all members of the class so value would be shared. <br />
+
+### Extension methods
+
+* extension methods work on objects and classes. <br />
+* in extensions classes, methods and fields should be static. <br />
+* if you write `this` keyword before method arguments. <br />
