@@ -542,3 +542,20 @@ int x = 5;
 Method2(ref x);
 // output: 105
 ```
+* when we using `ref` keyword, our variable must have value! <br/>
+* another call by reference is when we want to dont set value for our variable we should use `out` keyword: <br/>
+```
+public static void main(string[] args)
+{
+int x;
+method3(out x);
+}
+
+static void Method3(out int a)
+{
+    a = 5;
+    a += 100;
+}
+
+// output: 105
+```
