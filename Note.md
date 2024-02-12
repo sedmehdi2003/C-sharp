@@ -498,4 +498,47 @@ class Person
 
 * extension methods work on objects and classes. <br />
 * in extensions classes, methods and fields should be static. <br />
-* if you write `this` keyword before method arguments. <br />
+* if you write `this` keyword before method arguments you made your method as an extension method. <br />
+* Extension method for make calendar to Shamsi: 
+```
+public static string ToShamsi(this DateTime date)
+{
+    PersianCalendar cal = new PersianCalendar();
+    return cal.GetYear(date) + "/" + cal.GetMonth(date) + "/" + cal.GetDayOfMonth(date);
+}
+```
+and for calling this method:
+```
+DateTime.Now.ToShamsi();
+```
+
+### Call by reference
+
+* when we have a variable and we set it to our method argument, we actually set a copy of variable <br />
+not itself this is call by value. reverse of call by value is call by reference. <br />
+call by variable: <br />
+```
+static void Method1(int a)
+{
+    a += 100;
+}
+```
+and for call:
+```
+int x = 5;
+Method2(x);
+// output: 5 
+```
+* for call by reference we need to add `ref` keyword behind our argument data type: <br />
+```
+static void Method2(ref int a)
+{
+    a += 100;
+}
+```
+and for call we should add `ref` keyword behind our variable: <br />
+```
+int x = 5;
+Method2(ref x);
+// output: 105
+```
