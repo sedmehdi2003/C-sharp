@@ -559,3 +559,42 @@ static void Method3(out int a)
 
 // output: 105
 ```
+* in call by reference we can have several output by `ref` and `out` keyword: <br />
+```
+int num1 , num2 , num3; // imagine we used ReadLine and got value from user.
+int sum = 0; 
+float avg;
+SumAvg(num 1 , num 2 , num 3 ,ref sum, out avg);
+
+static void SumAvg(int a, int b, int c, ref int sum, out float avg)
+{
+    sum = a + b + c;
+    avg = sum / 3.0f;
+}
+```
+
+### Inheritance
+
+* share fields or methods. <br />
+* only public methods and fields are inherited. <br />
+* for use it: <br />
+```  
+class Student : person 
+{
+}
+```
+* if parent had a constructor, child must have constructor too. <br />
+* in child constructor we should write parent constructor arguments and then use `base` keyword: <br />
+```
+class Students:Person
+{
+    public int StudentId {get; set;}
+    public int StudentFieldStudy {get; set;}
+    
+    public Students (string Name, string Family, string PhoneNumber, int Age) : base (Name, Family,PhoneNumber,Age)
+    {
+    
+    }
+}
+```
+* actually `base`keyword is parent class.
