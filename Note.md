@@ -494,7 +494,7 @@ class Person
 * if a method is static, it only able to access static fields. <br />
 * static members belong to all members of the class so value would be shared. <br />
 
-### Extension methods
+**Extension methods:**
 
 * extension methods work on objects and classes. <br />
 * in extensions classes, methods and fields should be static. <br />
@@ -512,7 +512,7 @@ and for calling this method:
 DateTime.Now.ToShamsi();
 ```
 
-### Call by reference
+**Call by reference:**
 
 * when we have a variable and we set it to our method argument, we actually set a copy of variable <br />
 not itself this is call by value. reverse of call by value is call by reference. <br />
@@ -573,7 +573,7 @@ static void SumAvg(int a, int b, int c, ref int sum, out float avg)
 }
 ```
 
-### Inheritance
+**Inheritance:**
 
 * share fields or methods. <br />
 * only public methods and fields are inherited. <br />
@@ -598,3 +598,26 @@ class Students:Person
 }
 ```
 * actually `base`keyword is parent class.
+
+**Overriding:**
+
+* when we want to make a method in child class with same name of this method in parent class we have to override. <br/>
+* in parent class when we declare a method we should use `virtual` keyword after writing public. <br/>
+* and also we need to use `override` keyword in child class. <br/>
+
+
+**Abstraction:**
+
+* if we type `abstract` keyword before class, class wont able to make a shape. <br/>
+* if we had a abstract class we can declare abstract method with `abstract` keyword. <br/>
+* if we made abstract method, method cant have body and it write like this: <br />
+```
+abstract class 
+{
+    public abstract void Print();
+}
+```
+* if we made a abstract method in parent class all child classes must have this method. <br />
+* we define a virtual method when method has a body but here because of `abstract` keyword, <br />
+our method doesn't have a body and we have to override it in child class by `override` keyword. <br/>
+* when we call abstract method every shape will refer to its own method that we override. <br/>
