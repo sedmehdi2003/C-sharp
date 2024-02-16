@@ -621,3 +621,15 @@ abstract class
 * we define a virtual method when method has a body but here because of `abstract` keyword, <br />
 our method doesn't have a body and we have to override it in child class by `override` keyword. <br/>
 * when we call abstract method every shape will refer to its own method that we override. <br/>
+
+**Interfaces**
+
+* interface is not a class. <br/>
+* for name a interface file we use pascal case. <br />
+* in interfaces there are not any access levels. <br/>
+* we cant declare a field in interface but we can have property instead. <br/>
+* we cant have constructor in interfaces and we cant make a shape from them. <br/>
+* but we can make a shape from interface child : `IPerson person1 = new Student();` <br/>
+```
+
+```
