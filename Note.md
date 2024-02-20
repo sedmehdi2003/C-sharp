@@ -628,8 +628,10 @@ our method doesn't have a body and we have to override it in child class by `ove
 * for name a interface file we use pascal case. <br />
 * in interfaces there are not any access levels. <br/>
 * we cant declare a field in interface but we can have property instead. <br/>
+* we can inherit from interface but we should implement interface's members. <br/>
 * we cant have constructor in interfaces and we cant make a shape from them. <br/>
 * but we can make a shape from interface child : `IPerson person1 = new Student();` <br/>
-```
-
-```
+* if we declare a method in interface and implement method in every classes with same, <br/>
+when we call it by his shape name it will call the method of specified class and also specified interface. <br/>
+* we can inherit from several interfaces `class Class1 : Interface1, Interface2, Interface3` and when we call by interface `Interface1 shape1 = new Class1();` we only access methods of interface1. <br/>
+* we also have inheritance for interface from another interface `interface Interface1 : Interface2` but we don't need to implement child interface. <br/>
