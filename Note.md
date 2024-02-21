@@ -690,3 +690,10 @@ int temp = age ?? 0;
 // 3.
 int? age = null;
 ```
+
+**differences between `object`, `var` and `dynamic`**
+
+* we need assign a value for `var` exactly when we define it. <br/>
+* in `var` after assignment variable known as a data type (int, string and etc). <br/>
+* in `object` we don't need to assign anything. <br/>
+* `object` will automatically assign when we run codes. <br/>
