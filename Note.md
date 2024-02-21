@@ -635,3 +635,58 @@ our method doesn't have a body and we have to override it in child class by `ove
 when we call it by his shape name it will call the method of specified class and also specified interface. <br/>
 * we can inherit from several interfaces `class Class1 : Interface1, Interface2, Interface3` and when we call by interface `Interface1 shape1 = new Class1();` we only access methods of interface1. <br/>
 * we also have inheritance for interface from another interface `interface Interface1 : Interface2` but we don't need to implement child interface. <br/>
+
+### Data types (last season points)
+
+* we have two parts in ram by name of stack and hip. <br/>
+* value types use stack and because of that they are faster. <br/>
+  
+**Enum types**
+
+* enums are value types. <br/>
+* we use them to name by numbers :
+```
+enum Color 
+{ 
+    red,green,blue,yellow,black,brown,pink,orange
+ //  0 , 1   , 2  , 3    , 4   , 5   , 6  , 7 
+}
+```
+* for calling them:
+`int a = (int)Color.green    a = 1`
+`int b = Color.green    b = green`
+
+**struct types**
+
+* structs are also value types. <br/>
+* in structs we just declare fields. <br/>
+* syntax :
+```
+struct Parent 
+{
+    public int age;
+    public string name;
+}
+
+main ()
+{
+    Parent p1;
+    p1.name = "ali";
+    p1.age = 20;
+}
+```
+
+**Nullable types**
+
+* we cant define a int,flout or ... as `null`. <br/>
+* how we can declare a variable nullable:
+```
+// 1.
+Nullable <int> age = null;
+
+// 2.
+int temp = age ?? 0;
+
+// 3.
+int? age = null;
+```
