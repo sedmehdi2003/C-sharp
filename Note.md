@@ -641,7 +641,7 @@ when we call it by his shape name it will call the method of specified class and
 * we have two parts in ram by name of stack and hip. <br/>
 * value types use stack and because of that they are faster. <br/>
   
-**Enum types**
+**Enum types:**
 
 * enums are value types. <br/>
 * we use them to name by numbers :
@@ -656,7 +656,7 @@ enum Color
 `int a = (int)Color.green    a = 1`
 `int b = Color.green    b = green`
 
-**struct types**
+**struct types:**
 
 * structs are also value types. <br/>
 * in structs we just declare fields. <br/>
@@ -676,7 +676,7 @@ main ()
 }
 ```
 
-**Nullable types**
+**Nullable types:**
 
 * we cant define a int,flout or ... as `null`. <br/>
 * how we can declare a variable nullable:
@@ -691,9 +691,13 @@ int temp = age ?? 0;
 int? age = null;
 ```
 
-**differences between `object`, `var` and `dynamic`**
+**Differences between `object`, `var` and `dynamic`:**
 
 * we need assign a value for `var` exactly when we define it. <br/>
 * in `var` after assignment variable known as a data type (int, string and etc). <br/>
 * in `object` we don't need to assign anything. <br/>
 * `object` will automatically assign when we run codes. <br/>
+* `dynamic` is flexible to change its value type any time. <br/>
+* we can use `.GetType` method to understand what value type is our variable. <br/>
+* `dynamic` is like `object`, it assigns value type when we run code. <br/>
+* `dynamic` is so much faster than `object` because they use stacks. <br/>
