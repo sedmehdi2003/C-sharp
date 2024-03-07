@@ -314,6 +314,7 @@ class Student
 
 }
 ```
+
 * when you create new shape with `new` keyword, you can use methods of class. <br /> 
 so we can create new shape this way: `Random number = new Random();` then we can use methods of class Random. <br />
 * we can create new shapes with for loop to avoid repeated codes: <br />
@@ -349,6 +350,17 @@ foreach (var item in studentList)
 {
 Console.writeLine("item.StudentId + item.StudentFName + item.StudentLName + item.StudentFName + item.StudentAge");
 }
+```
+* there is another way to assign value to the shape properties: <br />
+```
+Student student1 = new Student() 
+{
+    Id = 1,
+    Name = "ali",
+    Family = "firoozi",
+    Age = 17
+};
+
 ```
 
 **access levels:**
@@ -701,3 +713,89 @@ int? age = null;
 * we can use `.GetType` method to understand what value type is our variable. <br/>
 * `dynamic` is like `object`, it assigns value type when we run code. <br/>
 * `dynamic` is so much faster than `object` because they use stacks. <br/>
+
+**Boxing**
+
+* if we add a value type variable to reference type variable we did boxing:
+```
+int number = 29;
+object obj = 63;
+
+obj = number;
+```
+* unboxing is apposite of boxing but we need to convert reference type variable to a value type variable before doing unboxing:
+```
+int number = 29;
+object obj = 63;
+
+number = (int)obj;
+```
+
+* Type castings (hint):
+Parse
+{value type}.TryParse
+Convert.{value type}
+(int)obj
+
+**explicit and implicit**
+
+* if we need to convert its explicit and if we dont need to convert its implicit. <br/>
+* for making explicit and implicit method:
+```
+// imagine number of our properties is more than class Teacher.
+// Explicit method
+class Student 
+{
+    public static explicit operator Teacher(Student x)
+    {
+        Teacher teacher1 = new Teacher()
+        {
+            Id = teacher1.Id,
+            Name = teacher1.Name,
+            Family = teacher1.Family
+        };
+        return teacher1;
+    }
+}
+
+class Teacher 
+{
+    // Implicit method
+    public static implicit operator Student(Teacher x)
+    {
+        Student student1 = new Student()
+        {
+            Id = student1.Id,
+            Name = student1.Name,
+            Family = student1.Family,
+        };
+        return student1;
+    }
+}
+```
+
+and for calling them : <br/>
+
+```
+Student student1 = new Student()
+{
+    Id = 2,
+    Name = "reza",
+    Family = "moradi"
+};
+
+Teacher teacher1 = new Teacher()
+{
+    Id = 2,
+    Name = "reza",
+    Family = "moradi"
+};
+
+// explicit
+
+teacher1 = (Teacher)student1; 
+
+// implicit
+
+student1 = teacher1; 
+```
