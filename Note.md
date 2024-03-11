@@ -799,3 +799,46 @@ teacher1 = (Teacher)student1;
 
 student1 = teacher1; 
 ```
+
+**Error Control**
+
+* sometimes when we have an error, program automatically shows some information about <br/> the error and our project we have to dont let it show our information because of security issues.<br/>
+* `try-catch` : <br/>
+```
+try
+{
+    //codes
+}
+
+catch (Exception example)
+{
+    //codes,  example: console.WriteLine("error : {0}", example.Message)
+}
+finally
+{
+    //codes
+}
+```
+so here `try` runs codes in its block and if it found an error it will poss it to `catch`. <br/>
+and `catch` will show the error information and `Exception` is a class that we can make <br/> a shape from that and use its properties and methods. <br/>
+* `finally` block runs code anyway, doesnt matter it does have error or not. <br/>
+* when your using data base you better use `try-catch`. <br/>
+* `example.Message` shows error message. <br/>
+* `DivedeByZeroException` for dividing by zero. <br/>
+* `NullReferenceException` for null issues. <br/>
+* `FormatException` for value types and formats. <br/>
+* `IndexOutOfRangeException` for arrays and indexes. <br/>
+* `FileNotFoundException` for files. <br/>
+* multi catching : using `catch` for many times. <br/>
+* `throw` : when an unexpected exception happens it poss it to a class (constructor): <br/>
+```
+if (0 <= avg && avg <= 20) 
+{
+    Console.WriteLine("Avg is Valid")
+}
+else
+{
+    throw new MyException("Avg is Invalid")
+}
+```
+now we have our customized error message.<br/>
