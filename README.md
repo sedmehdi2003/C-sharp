@@ -5,5 +5,5 @@ it includes all important and new points of C# compare by other languages.
 1/21/2024 SedMehdi Khalili
 
 update-->
-Finally I ended up learning c# , UniProject is my last project I just uploaded that you can check it , took me 3 monthes. next flags are learning professional C# programming and .Net development that I should Capture .
+Finally I ended up learning c# , UniProject is my last project I just uploaded that you can check it ,next flags are learning professional C# programming and .Net development that I should Capture .
 4/29/2024 SedMehdi Khalili
