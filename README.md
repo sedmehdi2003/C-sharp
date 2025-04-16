@@ -9,5 +9,5 @@ Finally I ended up learning c# , UniProject is my last project I just uploaded t
 4/29/2024 SedMehdi Khalili
 
 update--> 
-now that i learned professional C# programming im done with C# and its time to learn .NET core.\n
+now that i learned professional C# programming im done with C# and its time to learn .NET core.
 7/15/2024 SedMehdi Khalili
